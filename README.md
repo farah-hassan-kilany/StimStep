@@ -10,10 +10,11 @@ Embedded C++ firmware for StimStep
 ## System Features
 
 - **Gait Detection:** Using MPU6050 data-ready interrupts and threshold-based walking detection algorithm.
-- **FES Pulse Generation:** Biphasic stimulation using GPIO-controlled op-amp circuitry with real-time triggering.
-- **EMG Feedback Monitoring:** Analog signal acquisition for detecting muscle contraction effectiveness.
-- **Wi-Fi Sync:** Sends session data (step count, EMG logs, device status) to the backend via HTTP.
-- **Web Server Interface:** Allows basic mobile control during initial device setup and testing.
+- **Non-Blocking Biphasic FES Pulse Generation:** Biphasic stimulation using GPIO-controlled op-amp circuitry with real-time triggering.
+- **EMG Feedback Acquisition:** Analog signal acquisition from the Tibialis Anterior muscle for detecting muscle contraction effectiveness.
+- **Wi-Fi Sync:** Sends session data (step count, EMG logs, device status) to the Laravel backend via HTTP.
+- **Web Server API** for real-time monitoring and control
+- **Safety Logic** to prevent overstimulation and ensure patient safety
 
 ---
 
@@ -34,6 +35,33 @@ Embedded C++ firmware for StimStep
 
 ---
 
+## 📈 Functional Flow
+
+1. **Initialization**: Sets up MPU6050, Wi-Fi, GPIO, and interrupts.
+2. **Interrupt-Driven Gait Detection**: Detects walking via MPU6050 gyroscope threshold.
+3. **FES Activation**: Triggers biphasic pulse train through GPIO.
+4. **EMG Monitoring**: Reads analog signal and stores data.
+5. **Data Sync**: Sends step counts and EMG logs to backend upon Wi-Fi availability.
+
+---
+
+## 🛡️ Safety Features
+
+- Automatic timeout after each stimulation window
+- Maximum daily step goal enforcement
+- Hardware-level enable/disable button
+
+---
+
+## 📲 App Integration
+
+The system connects with a web app (via RESTful API) that allows:
+- Doctor login and patient registration
+- Real-time or periodic monitoring of step count and EMG activation
+- Adjustment and testing of FES parameters
+
+---
+
 ## 🚫 License
 
 This project is under a **No License** clause.  
@@ -43,10 +71,11 @@ This project is under a **No License** clause.
 
 ---
 
-## Citation
+## Author
 
-> *StimStep*  
-> Farah Hassan Mohammed Kilany, Biomedical Engineering Department, Misr university for science and technology, 2025  
+> **Farah Hassan Mohammed Kilany**
+> Biomedical Engineering Department, Misr University for Science and Technology
+> Embedded System Developer – StimStep Project (2025)    
 > For academic viewing only.
 
 ---
