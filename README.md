@@ -31,7 +31,7 @@ Embedded C++ firmware for StimStep
 
 ## File Structure
 
-- `stimstep.ino` – Main embedded firmware
+- `StimStep.ino` – Main embedded firmware
 
 ---
 
@@ -74,8 +74,8 @@ This project is under a **No License** clause.
 ## Author
 
 > **Farah Hassan Mohammed Kilany**
-> Biomedical Engineering Department, Misr University for Science and Technology
-> Embedded System Developer – StimStep Project (2025)    
+>  Biomedical Engineering Department, Misr University for Science and Technology
+>  Embedded System Developer – StimStep Project (2025)    
 > For academic viewing only.
 
 ---
