@@ -45,7 +45,7 @@ Embedded C++ firmware for StimStep
 
 ---
 
-## 🛡️ Safety Features
+## Safety Features
 
 - Automatic timeout after each stimulation window
 - Maximum daily step goal enforcement
@@ -53,7 +53,7 @@ Embedded C++ firmware for StimStep
 
 ---
 
-## 📲 App Integration
+## App Integration
 
 The system connects with a web app (via RESTful API) that allows:
 - Doctor login and patient registration
@@ -62,7 +62,7 @@ The system connects with a web app (via RESTful API) that allows:
 
 ---
 
-## 🚫 License
+## License
 
 This project is under a **No License** clause.  
 > That means:
