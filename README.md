@@ -43,7 +43,7 @@ This project is under a **No License** clause.
 
 ---
 
-## 🧾 Citation
+## Citation
 
 > *StimStep*  
 > Farah Hassan Mohammed Kilany, Biomedical Engineering Department, Misr university for science and technology, 2025  
@@ -51,7 +51,7 @@ This project is under a **No License** clause.
 
 ---
 
-## 🧪 Demo and Usage
+## Demo and Usage
 
 - Designed to operate continuously throughout the day.
 - Stimulus automatically stops once the preset daily step count is reached.
